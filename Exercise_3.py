@@ -1,4 +1,4 @@
-print 'Time to play some games with numbers'
+print ' Time to play some games with numbers'
 
 print '4 + 5 =',4+5
 
