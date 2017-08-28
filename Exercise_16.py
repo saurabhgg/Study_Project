@@ -13,10 +13,10 @@ print file2.read()
 
 
 print "Opening the file -> %s" %file_name
-file1=open(file_name,'w')
+file1=open(file_name,'a+')
 
 print "truncating the file %s" %file_name
-file1.truncate()
+#file1.truncate()
 
 print 'Let\'s write something into the file'
 file1.write(raw_input('Shoot us with some random stuff that you want us to write'))
@@ -26,6 +26,6 @@ file1.write(raw_input('Shoot us with some random stuff that you want us to write
 file1.write('\n')
 file1.write(raw_input('Shoot us with some random stuff that you want us to write again'))
 
+print file1.read()
+
 file1.close()
-file2=open(file_name,'r')
-print file2.read()
